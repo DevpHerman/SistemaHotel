@@ -26,17 +26,90 @@ public class TelaPrincipal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        menuPrincipalBarra = new javax.swing.JMenuBar();
+        menuCadprincipal = new javax.swing.JMenu();
+        menuCadHospede = new javax.swing.JMenu();
+        menuCadHospedeCadastrar = new javax.swing.JMenuItem();
+        menuCadHospedeConsulta = new javax.swing.JMenuItem();
+        menuCadQuarto = new javax.swing.JMenu();
+        menuCadQuartoCadastrar = new javax.swing.JMenuItem();
+        menuCadQuartoConsulta = new javax.swing.JMenu();
+        menuReservasPrincipal = new javax.swing.JMenu();
+        menuConsumoPrincipal = new javax.swing.JMenu();
+        menuFinanceiroPrincipal = new javax.swing.JMenu();
+        menuRelatorioPrincipal = new javax.swing.JMenu();
+        menuSegurançaPrincipal = new javax.swing.JMenu();
+        menuFerramentasPrincipal = new javax.swing.JMenu();
+        menuPrincipalSair = new javax.swing.JMenu();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        menuCadprincipal.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icone cadastro.png"))); // NOI18N
+        menuCadprincipal.setText("Cadastros |");
+
+        menuCadHospede.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icone hospede.png"))); // NOI18N
+        menuCadHospede.setText("Hospedes");
+
+        menuCadHospedeCadastrar.setText("Cadastrar");
+        menuCadHospede.add(menuCadHospedeCadastrar);
+
+        menuCadHospedeConsulta.setText("Consultar");
+        menuCadHospede.add(menuCadHospedeConsulta);
+
+        menuCadprincipal.add(menuCadHospede);
+
+        menuCadQuarto.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/iconequarto.png"))); // NOI18N
+        menuCadQuarto.setText("Quartos");
+
+        menuCadQuartoCadastrar.setText("Cadastrar");
+        menuCadQuarto.add(menuCadQuartoCadastrar);
+
+        menuCadQuartoConsulta.setText("Consultar");
+        menuCadQuarto.add(menuCadQuartoConsulta);
+
+        menuCadprincipal.add(menuCadQuarto);
+
+        menuPrincipalBarra.add(menuCadprincipal);
+
+        menuReservasPrincipal.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/reserva.png"))); // NOI18N
+        menuReservasPrincipal.setText("Reservas |");
+        menuPrincipalBarra.add(menuReservasPrincipal);
+
+        menuConsumoPrincipal.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/iconeconsumo.png"))); // NOI18N
+        menuConsumoPrincipal.setText("Consumo |");
+        menuPrincipalBarra.add(menuConsumoPrincipal);
+
+        menuFinanceiroPrincipal.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/iconefinanceiro.png"))); // NOI18N
+        menuFinanceiroPrincipal.setText("Financeiro |");
+        menuPrincipalBarra.add(menuFinanceiroPrincipal);
+
+        menuRelatorioPrincipal.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Iconerelatorio.png"))); // NOI18N
+        menuRelatorioPrincipal.setText("Relatório |");
+        menuPrincipalBarra.add(menuRelatorioPrincipal);
+
+        menuSegurançaPrincipal.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/iconesegurança.png"))); // NOI18N
+        menuSegurançaPrincipal.setText("Segurança |");
+        menuPrincipalBarra.add(menuSegurançaPrincipal);
+
+        menuFerramentasPrincipal.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icone ferramenta.png"))); // NOI18N
+        menuFerramentasPrincipal.setText("Ferramentas |");
+        menuPrincipalBarra.add(menuFerramentasPrincipal);
+
+        menuPrincipalSair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icone sair.png"))); // NOI18N
+        menuPrincipalSair.setText("Sair  ");
+        menuPrincipalBarra.add(menuPrincipalSair);
+
+        setJMenuBar(menuPrincipalBarra);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGap(0, 813, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGap(0, 418, Short.MAX_VALUE)
         );
 
         pack();
@@ -78,5 +151,20 @@ public class TelaPrincipal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JMenu menuCadHospede;
+    private javax.swing.JMenuItem menuCadHospedeCadastrar;
+    private javax.swing.JMenuItem menuCadHospedeConsulta;
+    private javax.swing.JMenu menuCadQuarto;
+    private javax.swing.JMenuItem menuCadQuartoCadastrar;
+    private javax.swing.JMenu menuCadQuartoConsulta;
+    private javax.swing.JMenu menuCadprincipal;
+    private javax.swing.JMenu menuConsumoPrincipal;
+    private javax.swing.JMenu menuFerramentasPrincipal;
+    private javax.swing.JMenu menuFinanceiroPrincipal;
+    private javax.swing.JMenuBar menuPrincipalBarra;
+    private javax.swing.JMenu menuPrincipalSair;
+    private javax.swing.JMenu menuRelatorioPrincipal;
+    private javax.swing.JMenu menuReservasPrincipal;
+    private javax.swing.JMenu menuSegurançaPrincipal;
     // End of variables declaration//GEN-END:variables
 }
